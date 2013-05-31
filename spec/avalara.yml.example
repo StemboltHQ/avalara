@@ -1,2 +1,4 @@
-username: 'daniel.honig@directnorth.biz'
-password: '4RealReal'
+# Credentials from Avalara trial account
+username: 'email@usedToSetUpAvalaraTrialAccount.com'
+password: 'somepassword'
+endpoint: 'https://development.avalara.net:443'

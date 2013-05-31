@@ -18,11 +18,12 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'hashie'
   s.add_dependency 'httparty'
-  s.add_dependency 'multi_json', '~> 1.5.0'
+  s.add_dependency 'multi_json', '~> 1.7.0'
+  s.add_dependency 'json', '~>1.7.7'
 
-  s.add_development_dependency 'vcr'
-  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'vcr', '~> 1.11.0'
+  s.add_development_dependency 'webmock', '~> 1.7.0'
   s.add_development_dependency 'rspec'
-  s.add_development_dependency 'factory_girl'
-  s.add_development_dependency 'ruby-debug19'
+  s.add_development_dependency 'factory_girl', '~> 2.5.0'
+  s.add_development_dependency 'debugger-pry' #ruby-debug19'
 end

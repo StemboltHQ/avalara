@@ -112,15 +112,14 @@ describe Avalara do
           begin
             request
           rescue Avalara::ApiError => e
-            e.message.messages.first
+            e.message
           end
         end
-        
-        its(:details) { should == "This value must be specified." }
-        its(:refers_to) { should == "CustomerCode" }
-        its(:severity) { should == "Error" }
-        its(:source) { should == "Avalara.AvaTax.Services" }
-        its(:summary) { should == "CustomerCode is required." }
+        it {should include 'details="This value must be specified."'}
+        it {should include 'refers_to="CustomerCode"'}
+        it {should include 'severity="Error"'}
+        it {should include 'source="Avalara.AvaTax.Services"'}
+        it {should include 'summary="CustomerCode is required."'}
       end
     end
     
