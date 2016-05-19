@@ -1,21 +1,8 @@
-Avalara
+Avalara Fork
 =======
 
-Uses the AvaTax REST API 1.0.
+Fork of the avalara gem from rails dog for api v1.0
 
-Running Specs from source
--------------------------
+This is a legacy gem and should not be used. Please use solidus_avatax or the avalara provided gem instead.
 
-1. Free trial signup at the Avalara developer site: 
-    
-    [developer.avalara.com](http://developer.avalara.com/api-get-started)
-
-2. run
-
-    bundle install
-
-3. Update credential file
-
-    cp spec/avalara.yml.example spec/avalara.yml
-    update the spec/avalara.yml with the proper credentials.
-    
+We use this for a project that relies on a preexisting implimentation.
